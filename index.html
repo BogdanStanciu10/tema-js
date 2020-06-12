@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Stanciu Bogdan - Adrian">
+    <meta name="description" content="Task management keeps track of your tasks and working hours">
+    <meta name="keywords" content='task management, time management'>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <title>Task Management</title>
+    <!--<link rel="stylesheet" href="styles/main.css">-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+<header>
+    <nav>
+    <ul>
+        <li><a href="#">Task Management</a></li>
+        <li style="float:right"><a href="#">Welcome, Admin</a></li>
+      </ul>
+    </nav>
+</header>
+
+    <h1><span class="title">Task </span>Management</h1>
+    <div class="inputDescriptioniv">
+           <input type="text" id="title" class="input" placeholder="Task Title">
+           <input type="text" id="description" class="input-description" placeholder="Task Description">
+           <input type="date" id="date" class="input-date" placeholder="Task date">
+           <input type="number" name="hours" class="input-hrs" id="input-hours" min="0" placeholder="0 hrs">
+           <input type="number" name="minutes" class="input-mns" id="input-minutes" min="0" max="59" placeholder="0 mins">
+    	   <button class="add"><i class="fa fa-plus"></i></button>
+    </div>
+    <div class="container">
+    </div>
+    <script src='scripts/main.js'></script>
+</body>
+</html>

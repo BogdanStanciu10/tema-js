@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+
+body{
+    height: 100%;
+    background-color: darkgray;
+    box-sizing: border-box;
+}
+
+h1 {
+	color: #fff;
+	font-size: 3rem;
+	font-weight: 50;
+	text-align: center;
+	margin: 1rem 0 3rem; 
+	font-family: 'Hind', sans-serif;
+}
+
+.title{
+	color: lime;
+	text-transform: uppercase;
+	font-weight: 800;
+}
+
+.inputDescriptioniv{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.input, .input-description, .input-date, .input-hrs, .input-mns{
+    padding: 0.5rem 1rem;
+    outline: none;
+    border: none;
+    height: 50px;
+    border-radius: 25px;
+    width: 230px;
+    margin: 0.25rem;
+    transition: .5s;
+    font-size: 1.15rem;
+}
+
+.add{
+	outline: none;
+    border: none;
+    height: 50px;
+    border-radius: 25px;
+    width: 50px;
+    background-color: lime;
+    color: white;
+    cursor: pointer;
+    transition: .5s;
+    margin: 0.25rem;
+}
+
+.add:hover{
+	opacity: 0.7;
+}
+
+.container{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin-top: 2rem;
+}
+
+.item{
+	padding: 0.5rem;
+	border-bottom: 4px solid #fff;
+	margin-bottom: 1.5rem;
+}
+
+.item_input{
+	background: none;
+	outline: none;
+	border: none;
+	color: #fff;
+	font-size: 16px;
+	width: 200px;
+	text-align: center;
+}
+
+.edit{
+	background: none;
+	outline: none;
+	border: none;
+	color: lime;
+	font-size: 16px;
+	font-family: 'Hind', sans-serif;
+	margin: 0 0.5rem;
+	cursor: pointer;
+}
+
+.remove{
+	background: none;
+	outline: none;
+	border: none;
+	color: #E00;
+	font-size: 16px;
+	font-family: 'Hind', sans-serif;
+	cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+	.item_input{
+		width: 165px;
+	}
+
+	.input, .input-description, .input-date, .input-hrs, .input-mns{
+		width: 180px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.item_input{
+		width: 100%;
+		text-align: left;
+	}
+
+	.input, .input-description, .input-date, .input-hrs, .input-mns{
+		width: 300px;
+	}
+	
+	.inputDescriptioniv{
+		flex-direction: column;
+	}
+
+	.edit{
+		float: left;
+	}
+
+	.remove{
+		float: right;
+	}
+}
+
+

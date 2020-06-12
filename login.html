@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Stanciu Bogdan - Adrian">
+    <meta name="description" content="Task management keeps track of your tasks and working hours">
+    <meta name="keywords" content='task management, time management'>
+    <link rel="stylesheet" href="styles/login.css">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <title>Task Management</title>
+</head>
+
+<body>
+    <main>
+        <h1>Login</h1>
+        <form method="post">
+            <div class="imgcontainer">
+                <img src="images/time.jpg" alt="Avatar" class="avatar">
+            </div>
+
+            <div class="container">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" id="username" placeholder="Enter Username" name="username" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" id="password" placeholder="Enter Password" name="password" required>
+                <p class="error"></p>
+                <button type="submit" id="submit" onclick="validate(event)">Login</button>
+            </div>
+        </form>
+    </main>
+
+    <footer class="main-footer">
+        <p>All rights reserved &copy;</p>
+    </footer>
+
+    <script src="scripts/login.js"></script>
+</body>
+
+</html>
